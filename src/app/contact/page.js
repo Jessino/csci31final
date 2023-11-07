@@ -10,6 +10,7 @@ export default function Contact() {
       <div className="m-12">
         <PageTitle title="Contact" />
         <PageContent />
+        <PageContent content="We look forward to hearing back from you!" />
       </div>
     </div>
   )

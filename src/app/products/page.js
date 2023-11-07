@@ -10,7 +10,7 @@ export default function Products() {
       <div className="m-12">
         <PageTitle title="Products" />
         <PageContent content="Our products are the best!" />
-        <PageContent />
+        <PageContent content="The really are!" />
       </div>
     </div>
   )
