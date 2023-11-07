@@ -9,6 +9,7 @@ export default function Products() {
       <Navbar />
       <div className="m-12">
         <PageTitle title="Products" />
+        <PageContent content="Our products are the best!" />
         <PageContent />
       </div>
     </div>
