@@ -1,3 +1,5 @@
+import { PaintBrushIcon } from '@heroicons/react/24/solid'
+
 const menuItems = [
   { title: 'Home', href: '/' },
   { title: 'About', href: '/about' },
@@ -8,12 +10,19 @@ const menuItems = [
 
 export default function Navbar() {
   return (
-    <div className="flex justify-end gap-4 m-6">
-      {menuItems.map((item, index) => (
-        <a key={index} href={item.href} className="px-4 py-2 bg-gray-100 text-emerald-900 shadow-md rounded">
-          {item.title}
-        </a>
-      ))}
+    <div className="flex justify-between gap-4 m-12 items-center">
+      <PaintBrushIcon className="h-12 w-12 text-indigo-700"></PaintBrushIcon>
+      <div className="flex gap-4">
+        {menuItems.map((item, index) => (
+          <a
+            key={index}
+            href={item.href}
+            className="px-4 py-2 bg-indigo-600 text-violet-100 shadow-md rounded text-lg transition-all hover:scale-105 bg-indigo-700 active:bg-indigo-800"
+          >
+            {item.title}
+          </a>
+        ))}
+      </div>
     </div>
   )
 }
