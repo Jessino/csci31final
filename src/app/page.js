@@ -10,7 +10,7 @@ export default function Home() {
       <Navbar />
       <div className="m-12">
         <PageTitle title="Home" />
-        <PageContent content="This is the home page of my React website. React so cool, especially now that I know how powerful it is." />
+        <PageContent content="This is the home page of my React website. React is so cool, especially now that I know how powerful it is." />
         <div class="flex gap-6">
           <Card title="My First Card" description="My first description" />
           <Card title="My Second Card" description="My second description" />

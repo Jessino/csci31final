@@ -11,7 +11,7 @@ const menuItems = [
 export default function Navbar() {
   return (
     <div className="flex justify-between gap-4 m-12 items-center">
-      <PaintBrushIcon className="h-12 w-12 text-indigo-700"></PaintBrushIcon>
+      <PaintBrushIcon className="h-12 w-12 text-indigo-700 drop-shadow-md"></PaintBrushIcon>
       <div className="flex gap-4">
         {menuItems.map((item, index) => (
           <a
