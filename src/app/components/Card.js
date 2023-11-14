@@ -6,7 +6,7 @@ export default function Card({
 }) {
   return (
     <div className="flex-column grow rounded shadow-lg bg-gray-100 transition-all hover:scale-105 cursor-pointer">
-      <img className="max-w-[550px] min-w-[250px]" src={img} alt={description} />
+      <img className="max-h-[350px]" src={img} alt={description} />
       <div className="px-6 py-4 bg-gray-100">
         <div className="font-bold text-xl mb-2 text-indigo-700">{title}</div>
         <p className="text-gray-800 text-base w-full">{description}</p>

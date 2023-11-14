@@ -19,7 +19,7 @@ export default async function Home() {
       <div className="m-12">
         <PageTitle title="Home" />
         <PageContent content="This is the home page of my React website. React is so cool, especially now that I know how powerful it is." />
-        <div className="flex gap-6 flex-wrap">
+        <div className="flex gap-6 flex-wrap overflow-hidden">
           {cards.map((card, idx) => (
             <Card key={idx} title={card.title} description={card.description} img={card.img} />
           ))}
