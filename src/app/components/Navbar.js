@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <div className="flex justify-between gap-4 m-12 items-center">
       <PaintBrushIcon className="h-12 w-12 text-indigo-700 drop-shadow-md"></PaintBrushIcon>
-      <div className="flex gap-4">
+      <div className="flex gap-4 flex-wrap">
         {menuItems.map((item, index) => (
           <a
             key={index}
