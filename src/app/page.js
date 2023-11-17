@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import PageTitle from './components/PageTitle'
 import PageContent from './components/PageContent'
 import Card from './components/Card'
+import Footer from './components/Footer'
 
 import { createClient } from '@supabase/supabase-js'
 
@@ -24,7 +25,7 @@ export default async function Home() {
             <Card key={idx} title={card.title} description={card.description} img={card.img} />
           ))}
         </div>
-        <PageContent />
+        <Footer />
       </div>
     </div>
   )
