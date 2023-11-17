@@ -9,14 +9,22 @@ const devientPage = 'https://www.deviantart.com/veriaart'
 export default function Footer() {
   return (
     <div className="rounded pt-6 mt-6 flex justify-center">
-      <a className="mr-10 drop-shadow-lg cursor-pointer transition-all hover:scale-125" href={igPage} target="_blank">
+      <a
+        className="mr-5 ml-5 drop-shadow-lg cursor-pointer transition-all hover:scale-125"
+        href={igPage}
+        target="_blank"
+      >
         <img className="h-12 invert" src={igIcon}></img>
       </a>
-      <a className="mr-10 drop-shadow-lg cursor-pointer transition-all hover:scale-125 " href={ytPage} target="_blank">
+      <a
+        className="mr-5 ml-5 drop-shadow-lg cursor-pointer transition-all hover:scale-125 "
+        href={ytPage}
+        target="_blank"
+      >
         <img className="h-12 invert" src={ytIcon}></img>
       </a>
       <a
-        className="mr-10 drop-shadow-lg cursor-pointer transition-all hover:scale-125"
+        className="mr-5 ml-5 drop-shadow-lg cursor-pointer transition-all hover:scale-125"
         href={devientPage}
         target="_blank"
       >
