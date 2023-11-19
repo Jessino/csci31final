@@ -1,4 +1,3 @@
-import Image from 'next/image'
 const hotlinks = [
   {
     icon: 'https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Instagram_svg-512.png',
