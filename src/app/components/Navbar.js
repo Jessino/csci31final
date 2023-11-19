@@ -3,7 +3,7 @@ import { PaintBrushIcon } from '@heroicons/react/24/solid'
 const menuItems = [
   { title: 'Home', href: '/' },
   { title: 'About', href: '/about' },
-  { title: 'Contact', href: '/contact' },
+  { title: 'Terms', href: '/tos' },
   { title: 'Services', href: '/services' },
   { title: 'Products', href: '/products' },
 ]
