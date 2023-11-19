@@ -16,8 +16,9 @@ const hotlinks = [
 export default function Footer() {
   return (
     <div className="rounded pt-6 mt-6 flex justify-center">
-      {hotlinks.map((item) => (
+      {hotlinks.map((item, index) => (
         <a
+          key={index}
           className="mr-5 ml-5 drop-shadow-lg cursor-pointer transition-all hover:scale-125"
           href={item.href}
           target="_blank"
