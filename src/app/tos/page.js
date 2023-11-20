@@ -4,7 +4,7 @@ import PageTitle from '../components/PageTitle'
 import PageContentStyled from '../components/PageContentStyled'
 import Footer from '../components/Footer'
 
-export default function Contact() {
+export default function TOS() {
   return (
     <div>
       <Navbar />
