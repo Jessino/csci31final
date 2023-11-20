@@ -9,7 +9,7 @@ export default function Services() {
       <Navbar />
       <div className="m-12">
         <PageTitle title="Gallery" />
-        <PageContent content="Gallery Page" />
+        <PageContent content="Gallery Page content." />
       </div>
     </div>
   )
