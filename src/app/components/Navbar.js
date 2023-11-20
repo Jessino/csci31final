@@ -4,7 +4,7 @@ const menuItems = [
   { title: 'Home', href: '/' },
   { title: 'About', href: '/about' },
   { title: 'Terms', href: '/tos' },
-  { title: 'Services', href: '/services' },
+  { title: 'Gallery', href: '/gallery' },
   { title: 'Products', href: '/products' },
 ]
 
