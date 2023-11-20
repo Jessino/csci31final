@@ -12,7 +12,7 @@ export default function Contact() {
         <PageTitle title="Terms Of Service" />
         <PageContentStyled>
           <div className="flex flex-col items-center">
-            <div className="flex flex-col items-center w-3/4 text-center">
+            <div className="flex flex-col items-center text-center">
               <h1 className="text-2xl text-indigo-700 font-bold mb-3">
                 By commissioning the artist, Veria Art, you agree to the following:
               </h1>
