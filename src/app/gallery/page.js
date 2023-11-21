@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar'
 import PageTitle from '../components/PageTitle'
 import Card from '../components/Card'
 import Footer from '../components/Footer'
-import PageContentStyled from '../../../csci31final/src/app/components/PageContentStyled'
 
 import { createClient } from '@supabase/supabase-js'
 
@@ -19,7 +18,7 @@ export default async function Gallary() {
       <Navbar />
       <div className="m-12">
         <PageTitle title="Gallary" />
-        <div className="flex gap-4 flex-wrap justify-center">
+        <div className="flex gap-4 mt-12 flex-wrap justify-center">
           {cards.map((card, idx) => (
             <Card key={idx} title={card.title} description={card.description} img={card.img} />
           ))}

@@ -23,7 +23,7 @@ export default function Footer() {
           href={item.href}
           target="_blank"
         >
-          <img className="h-12 invert" src={item.icon}></img>
+          <img className="h-12 invert" src={item.icon} alt={item.href}></img>
         </a>
       ))}
     </div>
