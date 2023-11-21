@@ -9,7 +9,7 @@ export default function Fullscreen({ image = 'https://placehold.co/600x400' }) {
       <button onClick={close} className="w-full text-gray-100 fixed">
         Close
       </button>
-      <img id="FullscreenImageImage" className="h-full" src={image}></img>
+      <img id="FullscreenImageImage" className="object-fit" src={image}></img>
     </div>
   )
 }
