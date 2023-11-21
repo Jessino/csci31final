@@ -1,14 +1,18 @@
+import Image from 'next/image'
+import igIcon from '../media/icons/ig.png'
+import ytIcon from '../media/icons/youtube.png'
+import deviantIcon from '../media/icons/deviant.png'
 const hotlinks = [
   {
-    icon: 'https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Instagram_svg-512.png',
+    icon: igIcon,
     href: 'https://www.instagram.com/veria_art/',
   },
   {
-    icon: 'https://cdn3.iconfinder.com/data/icons/picons-social/57/18-youtube-256.png',
+    icon: ytIcon,
     href: 'https://www.youtube.com/channel/UCWzC1IKxuCLygjENFvSvXPA',
   },
   {
-    icon: 'https://cdn1.iconfinder.com/data/icons/picons-social/57/social_deviantart-256.png',
+    icon: deviantIcon,
     href: 'https://www.deviantart.com/veriaart',
   },
 ]
@@ -23,7 +27,7 @@ export default function Footer() {
           href={item.href}
           target="_blank"
         >
-          <img className="h-12 invert" src={item.icon} alt={item.href}></img>
+          <Image className="h-12 invert" src={item.icon} alt={item.href} width={50} height={50}></Image>
         </a>
       ))}
     </div>
