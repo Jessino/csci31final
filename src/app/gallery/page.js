@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import PageTitle from '../components/PageTitle'
 import Card from '../components/Card'
 import Footer from '../components/Footer'
+import Fullscreen from '../components/Fullscreen'
 
 import { createClient } from '@supabase/supabase-js'
 
@@ -12,9 +13,9 @@ export const revalidate = 3000
 
 export default async function Gallary() {
   const { data: cards, error } = await supabase.from('cards').select()
-
   return (
     <div>
+      <Fullscreen />
       <Navbar />
       <div className="m-12">
         <PageTitle title="Gallary" />

@@ -2,10 +2,10 @@ import { PaintBrushIcon } from '@heroicons/react/24/solid'
 
 const menuItems = [
   { title: 'Home', href: '/' },
-  { title: 'About', href: '/about' },
-  { title: 'Terms', href: '/tos' },
   { title: 'Gallery', href: '/gallery' },
   { title: 'Products', href: '/products' },
+  { title: 'About', href: '/about' },
+  { title: 'Terms', href: '/tos' },
 ]
 
 export default function Navbar() {
