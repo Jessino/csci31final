@@ -5,8 +5,11 @@ export default function Fullscreen({ image = 'https://placehold.co/600x400' }) {
     image.style.display = 'none'
   }
   return (
-    <div id="FullscreenImage" className="object-top hidden flex fixed w-full h-full justify-center">
-      <button onClick={close} className="w-full text-gray-100 fixed">
+    <div
+      id="FullscreenImage"
+      className="flex bg-black object-top hidden fixed w-screen h-screen justify-center z-50 bg-opacity-50"
+    >
+      <button onClick={close} className="text-gray-100 fixed">
         Close
       </button>
       <img id="FullscreenImageImage" className="object-contain" src={image}></img>
