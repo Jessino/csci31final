@@ -20,7 +20,10 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className={`${inter.className} bg-gradient-to-r from-violet-400 to-indigo-500`}>{children}</body>
+      <body className={`${inter.className} bg-gradient-to-r from-violet-400 to-indigo-500`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
