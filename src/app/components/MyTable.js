@@ -16,9 +16,13 @@ export default function MyTable({ columns, records }) {
           <Table.Row key={record.id}>
             {columns.map((column, idx) =>
               idx === 0 ? (
-                <Table.RowHeaderCell key={`${record.id}-${idx}`}>{record[column.key]}</Table.RowHeaderCell>
+                <Table.RowHeaderCell className="whitespace-nowrap pr-5" key={`${record.id}-${idx}`}>
+                  {record[column.key]}
+                </Table.RowHeaderCell>
               ) : (
-                <Table.Cell key={`${record.id}-${idx}`}>{record[column.key]}</Table.Cell>
+                <Table.Cell className="whitespace-nowrap pr-5" key={`${record.id}-${idx}`}>
+                  {record[column.key]}
+                </Table.Cell>
               ),
             )}
           </Table.Row>

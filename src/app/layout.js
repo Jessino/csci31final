@@ -24,7 +24,6 @@ export default function RootLayout({ children }) {
       </head>
       <Theme>
         <body className={`${inter.className} bg-gradient-to-r from-violet-400 to-indigo-500`}>{children}</body>
-        <ThemePanel />
       </Theme>
       <Analytics />
     </html>

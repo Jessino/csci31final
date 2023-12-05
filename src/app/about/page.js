@@ -5,6 +5,7 @@ import PageContent from '../components/PageContent'
 import CardForm from '../components/CardForm'
 import MyTable from '../components/MyTable'
 import { findCards } from '../utils/supabase-client'
+import PageContentStyled from '../components/PageContentStyled'
 
 export const revalidate = 0
 
@@ -32,7 +33,9 @@ export default async function About() {
         <PageTitle title="About" />
         <PageContent content="This page contains everything you need to know about my website" />
         <CardForm />
-        <MyTable columns={cardTableColums} records={cards} />
+        <PageContentStyled>
+          <MyTable columns={cardTableColums} records={cards} />
+        </PageContentStyled>
       </div>
     </div>
   )
