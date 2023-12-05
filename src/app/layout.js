@@ -1,6 +1,8 @@
 import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
+import '@radix-ui/themes/styles.css'
+import { Theme, ThemePanel } from '@radix-ui/themes'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,10 +22,11 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className={`${inter.className} bg-gradient-to-r from-violet-400 to-indigo-500`}>
-        {children}
-        <Analytics />
-      </body>
+      <Theme>
+        <body className={`${inter.className} bg-gradient-to-r from-violet-400 to-indigo-500`}>{children}</body>
+        <ThemePanel />
+      </Theme>
+      <Analytics />
     </html>
   )
 }
