@@ -5,20 +5,20 @@ export default function MyTable({ columns, records }) {
     <Table.Root>
       <Table.Header>
         <Table.Row>
-          {columns.map((column) => (
-            <Table.ColumnHeaderCell>{column.title}</Table.ColumnHeaderCell>
+          {columns.map((column, idx) => (
+            <Table.ColumnHeaderCell key={idx}>{column.title}</Table.ColumnHeaderCell>
           ))}
         </Table.Row>
       </Table.Header>
 
       <Table.Body>
         {records.map((record) => (
-          <Table.Row>
+          <Table.Row key={record.id}>
             {columns.map((column, idx) =>
               idx === 0 ? (
-                <Table.RowHeaderCell>{record[column.key]}</Table.RowHeaderCell>
+                <Table.RowHeaderCell key={`${record.id}-${idx}`}>{record[column.key]}</Table.RowHeaderCell>
               ) : (
-                <Table.Cell>{record[column.key]}</Table.Cell>
+                <Table.Cell key={`${record.id}-${idx}`}>{record[column.key]}</Table.Cell>
               ),
             )}
           </Table.Row>
