@@ -19,7 +19,7 @@ const hotlinks = [
 
 export default function Footer() {
   return (
-    <div className="rounded pt-6 mt-6 flex justify-center">
+    <div className="rounded pt-6 mt-6 mb-12 flex justify-center">
       {hotlinks.map((item, index) => (
         <a
           key={index}

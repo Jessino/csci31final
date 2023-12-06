@@ -8,7 +8,7 @@ export default function Commission({
 }) {
   return (
     <div className="flex w-full flex-row mb-6 mt-6">
-      <div className="flex flex-col flex-1 items-center">
+      <div className="flex flex-col flex-1 items-center justify-center">
         <div className="text-xl mb-2 mt-2">{title}</div>
         <div className="flex w-full flex-row justify-around mb-2 mt-2">
           <div>
