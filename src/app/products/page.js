@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import PageTitle from '../components/PageTitle'
-import PageContentStyled from '../components/PageContentStyled'
 import Footer from '../components/Footer'
 import Commission from '../components/Commission'
+import PageContentSlim from '../components/PageContentSlim'
 
 export default function Products() {
   return (
@@ -11,7 +11,7 @@ export default function Products() {
       <Navbar />
       <div className="m-12">
         <PageTitle title="Products" />
-        <PageContentStyled>
+        <PageContentSlim>
           <div className=" flex flex-col w-full items-center">
             <div className="max-w-xl flex flex-col  items-center content-center">
               <h1 className="text-2xl text-indigo-700 font-bold mb-3 italic">Commission info</h1>
@@ -50,7 +50,7 @@ export default function Products() {
               />
             </div>
           </div>
-        </PageContentStyled>
+        </PageContentSlim>
       </div>
       <Footer />
     </div>

@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import PageTitle from '../components/PageTitle'
-import PageContentStyled from '../components/PageContentStyled'
 import Footer from '../components/Footer'
+import PageContentSlim from '../components/PageContentSlim'
 
 export default function TOS() {
   return (
@@ -10,7 +10,7 @@ export default function TOS() {
       <Navbar />
       <div className="m-12">
         <PageTitle title="Terms Of Service" />
-        <PageContentStyled>
+        <PageContentSlim>
           <div className="flex flex-col items-center">
             <div className="flex flex-col items-center text-center">
               <h1 className="text-2xl text-indigo-700 font-bold mb-3">
@@ -56,7 +56,7 @@ export default function TOS() {
               </p>
             </div>
           </div>
-        </PageContentStyled>
+        </PageContentSlim>
         <Footer />
       </div>
     </div>
