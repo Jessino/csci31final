@@ -16,14 +16,14 @@ export default function Products() {
             <div className="max-w-xl flex flex-col  items-center content-center">
               <h1 className="text-2xl text-indigo-700 font-bold mb-3 italic">Commission info</h1>
               <h1 className="text-2xl text-indigo-700 font-bold mb-3 italic">Note:</h1>
-              <p>
+              <div>
                 By commissioning me, Veria Art, you have agreed to the{' '}
                 <a className="underline" href="/tos">
                   terms of service
                 </a>
                 . I only accept Venmo and PayPal (USD) too. If you have any questions or concerns, please email me or
                 message me on instagram
-              </p>
+              </div>
               <Commission
                 title="Bust"
                 img="https://veriaart.carrd.co/assets/images/gallery02/3d89b20a_original.jpg?v=cf152a5c"
