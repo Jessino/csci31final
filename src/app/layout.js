@@ -2,7 +2,7 @@ import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
 import '@radix-ui/themes/styles.css'
-import { Theme, ThemePanel } from '@radix-ui/themes'
+import { Theme } from '@radix-ui/themes'
 
 const inter = Inter({ subsets: ['latin'] })
 
