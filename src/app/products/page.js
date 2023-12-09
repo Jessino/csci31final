@@ -9,7 +9,7 @@ export default function Products() {
   return (
     <div>
       <Navbar />
-      <div className="m-12">
+      <div className="m-12 mb-6">
         <PageTitle title="Products" />
         <PageContentSlim>
           <div className=" flex flex-col w-full items-center">

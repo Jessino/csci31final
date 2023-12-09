@@ -17,7 +17,7 @@ export default function Card({
   return (
     <div
       onClick={fullscreen}
-      className="flex-column rounded outline outline-4 outline-white shadow-lg bg-white transition-all hover:scale-[1.02] cursor-pointer"
+      className="flex-column rounded p-2 shadow-lg bg-white transition-all hover:scale-[1.02] cursor-pointer"
     >
       <img className="max-h-[500px]" src={img} alt={description} />
       <div className="px-6 py-4 ">
