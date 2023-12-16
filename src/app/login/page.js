@@ -22,9 +22,14 @@ export default function RegisterPage() {
   }
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-2 mx-auto max-w-md mt-12">
-      <input name="email" className="border border-black" placeholder="email..." type="email"></input>
-      <input name="password" className="border border-black" placeholder="password..." type="password"></input>
-      <button type="submit">Login</button>
+      <input name="email" className="p-3 shadow-lg text-lg rounded" placeholder="email" type="email"></input>
+      <input name="password" className="p-3 shadow-lg text-lg rounded" placeholder="password" type="password"></input>
+      <button
+        type="submit"
+        className="bg-white p-3 text-left text-lg shadow-lg rounded mt-6 hover:scale-105 transition-all"
+      >
+        Login
+      </button>
     </form>
   )
 }
