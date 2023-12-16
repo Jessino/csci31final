@@ -30,8 +30,8 @@ export default async function About() {
     <div>
       <Navbar />
       <div className="m-12">
-        <PageTitle title="About" />
-        <PageContent content="This page contains everything you need to know about my website" />
+        <PageTitle title="Dashboard" />
+        <PageContent content="This page contains all of the tools to upload content" />
         <CardForm />
         <PageContentStyled>
           <MyTable columns={cardTableColums} records={cards} />

@@ -4,8 +4,8 @@ const menuItems = [
   { title: 'Home', href: '/' },
   { title: 'Gallery', href: '/gallery' },
   { title: 'Products', href: '/products' },
-  { title: 'About', href: '/about' },
   { title: 'Terms', href: '/tos' },
+  { title: 'Dashboard', href: '/about' },
 ]
 
 export default function Navbar() {
