@@ -28,10 +28,7 @@ export default async function RootLayout({ children }) {
       </head>
       <Theme>
         <body className={`${inter.className} bg-gradient-to-r from-violet-400 to-indigo-500`}>
-          <nav>
-            {' '}
-            {!!session && <Logout />} {!session && <Link href={'/login'}>Login</Link>}{' '}
-          </nav>
+          <nav> {!!session && <Logout />} </nav>
           {children}
         </body>
       </Theme>
