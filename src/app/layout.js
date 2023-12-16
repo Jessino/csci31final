@@ -3,6 +3,9 @@ import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
 import '@radix-ui/themes/styles.css'
 import { Theme } from '@radix-ui/themes'
+import { getServerSession } from 'next-auth'
+import Link from 'next/link'
+import Logout from './logout'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,7 +14,8 @@ export const metadata = {
   description: '',
 }
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const session = await getServerSession()
   return (
     <html lang="en">
       <head>
@@ -23,7 +27,13 @@ export default function RootLayout({ children }) {
         />
       </head>
       <Theme>
-        <body className={`${inter.className} bg-gradient-to-r from-violet-400 to-indigo-500`}>{children}</body>
+        <body className={`${inter.className} bg-gradient-to-r from-violet-400 to-indigo-500`}>
+          <nav>
+            {' '}
+            {!!session && <Logout />} {!session && <Link href={'/login'}>Login</Link>}{' '}
+          </nav>
+          {children}
+        </body>
       </Theme>
       <Analytics />
     </html>
